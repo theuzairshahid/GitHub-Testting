@@ -1,0 +1,65 @@
+void main() {
+  
+  //STUDENTS DETAILS
+  var stdname = 'Muhammad Uzair';
+    var stdfathername = 'Shahid Sattar';
+      var stdclass = '8th';
+        var stdsec = 'A';
+  
+  //MARKS
+  num english = 90;
+    num maths = 78;
+      num urdu = 70;
+        num chemistry = 82;
+          num physics = 97;
+  
+  //CALCULATIONS
+  num markpersub = 100;
+    num total = 500;
+      num obtained = english + maths + urdu + chemistry + physics;
+        num rawdata = obtained / total;
+          num percentage = rawdata * 100;
+  
+  //REMARKS
+  var arr = ['Good Student.','Can Perform More Better.','Average Student.','Not Satisfied.','Need Proper Attention.','Bad In Studies.'];
+  
+  print('------------ Student Details ------------\n');
+    print('Student Name: ${stdname} \nFather Name: ${stdfathername} \nClass: ${stdclass} \nSection: ${stdsec}');
+  
+  print('\n------------ Marks ------------\n');
+    print('Marks in English: ${english} Out Of 100');
+      print('Marks in Maths: ${maths} Out Of 100');
+        print('Marks in Urdu: ${urdu} Out Of 100');
+          print('Marks in Chemistry: ${chemistry} Out Of 100');
+            print('Marks in Physics: ${physics} Out Of 100');
+    
+  print('\nTotal Obtained Marks: ${obtained}');
+    print('Out Of: ${total}');
+      print('Obtained Percentage: ${percentage}%');
+
+
+  if(percentage >= 90){
+    print("Grade A+\n");
+    print('Teacher Remarks: ${arr[0]}');
+  }
+  else if(percentage >= 80){
+    print("Grade A\n");
+    print('Teacher Remarks: ${arr[1]}');
+  }
+  else if(percentage >= 70){
+    print("Grade B\n");
+    print('Teacher Remarks: ${arr[2]}');
+  }
+  else if(percentage >= 60){
+    print("Grade C\n");
+    print('Teacher Remarks: ${arr[3]}');
+  }
+  else if(percentage >= 50){
+    print("Grade D\n");
+    print('Teacher Remarks: ${arr[4]}');
+  }
+  else if(percentage < 50){
+    print("Fail\n");
+    print('Teacher Remarks: ${arr[5]}');
+  }
+}
